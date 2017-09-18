@@ -1,0 +1,2 @@
+> scatter_area_sale <- ggplot(train, aes(LotArea,SalePrice)) + geom_point()
+
