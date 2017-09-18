@@ -1,2 +1,9 @@
 > scatter_area_sale <- ggplot(train, aes(LotArea,SalePrice)) + geom_point()
 
+> scatter_LotFrontage_sale <- ggplot(train, aes(LotFrontage,SalePrice)) + geom_point()
+
+> table(train$Street)
+
+> table(train$Alley)
+
+> table(train$LotShape)
