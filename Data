@@ -1,0 +1,8 @@
+-----------------------------------------------------------------------------
+# Import Files and Join
+-----------------------------------------------------------------------------
+> library("dplyr", lib.loc="~/R/win-library/3.4")
+> train <- read_csv("C:/Users/luismiguel.ferreira/Desktop/MachineLearning/Project_HousePrices/Datasets/train.csv")
+> test <- read_csv("C:/Users/luismiguel.ferreira/Desktop/MachineLearning/Project_HousePrices/Datasets/test.csv")
+> full <- dplyr::bind_rows(train,test)
+> save.image("C:/Users/luismiguel.ferreira/Desktop/MachineLearning/Project_HousePrices/Workspaces/Initial Workspace.RData")
