@@ -6,3 +6,8 @@
 > test <- read_csv("C:/Users/luismiguel.ferreira/Desktop/MachineLearning/Project_HousePrices/Datasets/test.csv")
 > full <- dplyr::bind_rows(train,test)
 > save.image("C:/Users/luismiguel.ferreira/Desktop/MachineLearning/Project_HousePrices/Workspaces/Initial Workspace.RData")
+
+-----------------------------------------------------------------------------
+# Outlier Removal from Train Data
+-----------------------------------------------------------------------------
+Lot_filter <- dplyr::filter(train, LotArea < 50000)
